@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodstore/uicontroller/foodstorelist.dart';
 
 void main() => runApp(MyApp());
 
@@ -6,6 +7,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Food Store',
+      home: FoodStore(),
+    );
   }
 }
